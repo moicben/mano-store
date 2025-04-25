@@ -5,7 +5,7 @@ import Footer from '../components/Footer';
 
 import { fetchData } from '../lib/supabase';
 
-const TrackOrder = ({ shop, brand, data, categories, reviews }) => {
+const TrackOrder = ({ shop, data, categories, reviews }) => {
     const [trackingNumber, setTrackingNumber] = useState('');
     const [trackingInfo, setTrackingInfo] = useState(null);
     const [error, setError] = useState('');
@@ -35,7 +35,7 @@ const TrackOrder = ({ shop, brand, data, categories, reviews }) => {
                 title={`${data.followPageLabel} - ${shop.name}`}
             />
             
-            <Header logo={brand.logo} categories={categories} data={data} shop={shop} reviews={reviews} />
+            <Header  categories={categories} data={data} shop={shop} reviews={reviews} />
             
             <main>
                 <div className="track-order-container">
@@ -70,7 +70,7 @@ const TrackOrder = ({ shop, brand, data, categories, reviews }) => {
 export async function getStaticProps() {
     const shop = await fetchData('shops', { match: { id: process.env.SHOP_ID } });
     const data = await fetchData('contents', { match: { shop_id: process.env.SHOP_ID } });
-    const brand = await fetchData('brands', { match: { shop_id: process.env.SHOP_ID } });
+    
     const categories = await fetchData('categories', { match: { shop_id: process.env.SHOP_ID } });
     const reviews = await fetchData('reviews', { match: { shop_id: process.env.SHOP_ID } });
 
@@ -78,7 +78,7 @@ export async function getStaticProps() {
         props: {
             shop: shop[0],
             data: data[0],
-            brand: brand[0],
+      
             categories: categories,
             reviews: reviews,   
         },

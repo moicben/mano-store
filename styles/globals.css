@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap");
 
 
 html,
@@ -11,7 +11,7 @@ body {
 
 *, input, textarea, select, button {
   box-sizing: border-box;
-  font-family: "Kanit", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
       Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
@@ -33,7 +33,7 @@ main {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 98px;
+  margin-top: 78px;
 }
 
 .content {
@@ -49,14 +49,14 @@ code {
 
 h1,h2,h3,h4,h5,h6 {
   font-weight: 400;
-  text-transform: uppercase;
+  
   color: #222222;
 }
 
 a {
   text-decoration: none;
   color: #000;
-  text-transform: uppercase;
+  
   scroll-behavior: smooth !important;
 }
 
@@ -68,12 +68,12 @@ p{
 button {
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
-  color: white;
+  color: #0F2161;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-weight: 400;
-  text-transform: uppercase;
+  font-weight: 500;
+  background-color: #58d5bf;
 }
 
 table {
@@ -119,12 +119,10 @@ td {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height:calc(100vh - 14rem);
-  min-height: 600px;
   position: relative;
   color: white;
   text-align: center;
-  padding: 0 4rem;
+  padding: 6rem 4rem;
   background-color: transparent;
   overflow: hidden;
   width: 100%;
@@ -136,7 +134,7 @@ td {
   height: 100%;
   position: absolute;
   z-index: 2;
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 .hero img,
@@ -146,24 +144,26 @@ td {
   object-fit: cover;
   position: absolute;
   z-index: 1;
-  filter: blur(5px);
 }
 
 .hero h1 {
   margin-top: -2rem;
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 0rem;
   z-index: 3;
   max-width: 930px;
   color: white;
+  font-weight: 700;
 }
 
-.hero p {
-  font-size: 1.25rem;
-  margin-bottom: 2rem;
+.hero h3 {
+  font-size: 1rem;
+  margin-bottom: 0rem;
   z-index: 3;
-  max-width: 660px;
+  max-width: 860px;
+  font-weight: 400;
   color: white;
+  line-height: 1.7rem;
 }
 .hero a{
   z-index: 3;
@@ -216,6 +216,7 @@ td {
   justify-content: space-between;
   align-items: center;
   padding: 4rem 4rem;
+  text-align: center;
 }
 
 
@@ -224,14 +225,11 @@ td {
   padding-right: 4rem;
 }
 
-.about-content h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: #333;
-}
 
-.about-content p {
+
+.about h3 {
   font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .about-content .row{

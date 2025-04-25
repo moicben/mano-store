@@ -7,7 +7,7 @@
     font-weight: 300;
     color: white;
     z-index: 11;
-    text-transform: uppercase;
+    
     letter-spacing: .2px;
   }
 
@@ -22,7 +22,7 @@
     position: fixed;
     top: 0;
     z-index: 100;
-    background-color: #fff;
+    background-color: #0F2161;
   }
   
   .header .wrapper{
@@ -31,7 +31,7 @@
     align-items: center;
     width: 100%;
     max-width: calc(1280px + 8rem);
-    padding: 2.25rem 4rem;
+    padding: 1.5rem 4rem;
     position: relative;
     z-index: 11;
   }
@@ -47,7 +47,8 @@
   }
 
   .logo-header h2{
-    font-weight: 7  00;
+    font-weight: 500;
+    margin: 0;
   }
   
   .nav{
@@ -135,7 +136,7 @@
   .header nav a {
     text-decoration: none;
     font-size: 1rem;
-    color: #1c1c1c;
+    color: white;
     margin: 0px 1rem;
     padding: 0px .5rem;
     font-weight: 500;
@@ -163,7 +164,7 @@
   
   .header .cart-icon {
     font-size: 1.25rem;
-    color: #333;
+    color: white;
   }
   
   .burger-icon {
@@ -195,6 +196,7 @@
   
   .cart-drawer h2 {
     margin-top: 0;
+    font-weight: 600;
   }
   
   
@@ -304,11 +306,9 @@
     background: rgb(221, 221, 221);
     color: black;
     border-radius: 50%;
-    padding: 0px 6px;
-    font-size: 0.75rem;
-    font-weight: 400;
-    width: 18px;
-    height: 18px;
+    padding: 0px 4px 1px 4px;
+    font-size: 9px;
+    font-weight: 500;
   }
 
 

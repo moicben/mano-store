@@ -87,8 +87,7 @@ const Checkout = ({data, shop, brand}) => {
   return (
     <div className="paiement-container">
       <Head name={shop.name} domain={shop.domain}
-            favicon={brand.favicon} graph={brand.graph}
-            colorPrimary={brand.colorPrimary} colorSecondary={brand.colorSecondary} colorBlack={brand.colorBlack} colorGrey={brand.colorGrey} bgMain={brand.bgMain} bgLight={brand.bgLight} bgDark={brand.bgDark} radiusBig={brand.radiusBig} radiusMedium={brand.radiusMedium} font={brand.font} 
+            
             title={`${data.checkoutPageLabel} - ${shop.name}`}
       />
 
@@ -159,13 +158,13 @@ export async function getStaticProps() {
 
   const data = await fetchData('contents', { match: { shop_id: process.env.SHOP_ID } });
   const shop = await fetchData('shops', { match: { id: process.env.SHOP_ID } });
-  const brand = await fetchData('brands', { match: { shop_id: process.env.SHOP_ID } });
+  
 
   return {
     props: {
       data: data[0],
       shop: shop[0],
-      brand: brand[0],
+
     },
   };
 }

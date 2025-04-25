@@ -7,7 +7,7 @@ import Categories from '../../components/Categories';
 
 import { fetchData } from 'lib/supabase';
 
-const Article = ({ shop, data, brand, article, categories, reviews }) => {
+const Article = ({ shop, data, article, categories, reviews }) => {
   const router = useRouter();
   const { article: articleId } = router.query;
 
@@ -41,7 +41,7 @@ const Article = ({ shop, data, brand, article, categories, reviews }) => {
       />
 
       <main>
-        <Header logo={brand.logo} categories={categories} data={data} shop={shop} reviews={reviews} />
+        <Header  categories={categories} data={data} shop={shop} reviews={reviews} />
         <section className="article" id="article">
           <div className="wrapper">
             <div className="article-content">
@@ -88,7 +88,7 @@ export async function getStaticProps({ params }) {
   // Récupérer les autres données pour la page
   const data = await fetchData('contents', { match: { shop_id: process.env.SHOP_ID } });
   const shop = await fetchData('shops', { match: { id: process.env.SHOP_ID } });
-  const brand = await fetchData('brands', { match: { shop_id: process.env.SHOP_ID } });
+  
   const categories = await fetchData('categories', { match: { shop_id: process.env.SHOP_ID } });
   const reviews = await fetchData('reviews', { match: { shop_id: process.env.SHOP_ID } });
 
@@ -96,7 +96,7 @@ export async function getStaticProps({ params }) {
     props: {
       data: data[0],
       shop: shop[0],
-      brand: brand[0],
+
       article,
       categories,
       reviews,

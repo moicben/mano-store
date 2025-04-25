@@ -17,24 +17,20 @@ const Footer = ({ shop,data }) => {
       <section className="features">
         <div className='wrapper'>
           <div className='feature-item'>
-            <img src="/delivery.png" alt="livraison gratuite" />
-            <p>{data.footerDeliveryLabel}</p>
+            <img src="https://www.manomano.fr/assets/_next/static/images/save-money-b2c-2c84261bd1b89341.svg" alt="livraison gratuite" />
+            <p>Le spécialiste français du bricolage, maison, jardin</p>
           </div>
           <div className='feature-item'>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 38">
-              <path d="M32.5 13.5c-1.8-4.1-5.1-7.2-9.3-8.8-4-1.7-8.6-1.5-12.7.3C4.8 7.6 1.1 13.1.7 19.4c-.1.3 0 .6.1.9 0 0 0 .1.1.1v.1c.3.5.8.8 1.4.8.9.1 1.7-.7 1.8-1.6.3-5 3.2-9.4 7.8-11.4 6.6-3.1 14.5-.1 17.5 6.7 3 6.7 0 14.7-6.6 17.7-2.7 1.2-5.8 1.5-8.6.8l.2-.3c.2-.3.2-.8-.1-1.1-.2-.3-.5-.5-.9-.5l-4.7.1c-.4 0-.7.2-.9.6-.2.3-.2.7 0 1l2.5 4.1c.2.3.6.6 1 .5.4 0 .7-.2.9-.5l.4-.7c1.6.5 3.4.8 5 .7 2.3 0 4.5-.5 6.6-1.4 4.1-1.9 7.2-5.2 8.7-9.4 1.7-4.4 1.5-9-.4-13.1"></path>
-            </svg>
-            <p>{data.footerReturnLabel}</p>
+            <img src='https://www.manomano.fr/assets/_next/static/images/delivery-b2c-5dfb15e01aa0381f.svg' alt="livraison gratuite" />
+            <p>Livraison et retours gratuits pendant 100 jours</p>
           </div>
           <div className='feature-item'>
-            <img src="/guarantee.png" alt="livraison gratuite" />
-            <p>{data.footerGuarenteeLabel}</p>
+            <img src="https://www.manomano.fr/assets/_next/static/images/disponibility-b2c-c05d4d783dd84153.svg" alt="livraison gratuite" />
+            <p>Paiement jusqu'à 4x sans frais et 100% sécurisé</p>
           </div>
           <div className='feature-item'>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 38">
-              <path d="M30.1 4.3c-.4-.3-1-.3-1.4-.1-6.4 3-9.1-.8-9.2-1-.3-.4-.7-.7-1.2-.7s-1 .3-1.2.7c-.1.2-2.8 4-9.2 1-.5-.2-1-.2-1.5.1-.4.3-.7.7-.7 1.3V20.3c.1.5 2.3 12.3 11.9 16.6.2.1.4.1.6.1.2 0 .4 0 .6-.1 9.6-4.2 11.8-16.1 11.9-16.6V5.6c.1-.6-.1-1-.6-1.3zm-2.2 15.6c-.2 1.1-2.4 10.4-9.6 14-7.2-3.6-9.4-12.9-9.6-14V7.7c4.5 1.4 7.8.1 9.6-1.5 1.8 1.6 5.1 2.9 9.6 1.5v12.2z"></path>
-            </svg>
-            <p>{data.footerSecureLabel}</p>
+          <img src="https://www.manomano.fr/assets/_next/static/images/trusted-partener-b2c-d08145f6785dbec1.svg" alt="livraison gratuite" />
+            <p>Plus de 7 millions de clients particuliers</p>
           </div>
         </div>
       </section>
@@ -102,7 +98,7 @@ const Footer = ({ shop,data }) => {
                 <a href="/legals">{data.footerLegal2}</a>
                 <a href="/confidentiality">{data.footerLegal3}</a>
               </div>
-            <p>© 2025 - {data.footerCopyright} - {shop.name}</p>
+            <p>© 2025 - {data.footerCopyright} - ManoMano</p>
             <div className={styles.paymentIcons}>
               <img src="/card-logo.png" alt={"acheter" + shop.name} />
             </div>

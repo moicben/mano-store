@@ -40,8 +40,7 @@ export default function Verification({brand,shop}) {
   return (
     <div className="confirmation-container">
       <Head name={shop.name} domain={shop.domain}
-            favicon={brand.favicon} graph={brand.graph}
-            colorPrimary={brand.colorPrimary} colorSecondary={brand.colorSecondary} colorBlack={brand.colorBlack} colorGrey={brand.colorGrey} bgMain={brand.bgMain} bgLight={brand.bgLight} bgDark={brand.bgDark} radiusBig={brand.radiusBig} radiusMedium={brand.radiusMedium} font={brand.font} 
+            
             title={`Confirmation - ${shop.name}`}
       />
 
@@ -55,12 +54,12 @@ export default function Verification({brand,shop}) {
 }
 
 export async function getStaticProps() {
-  const brand = await fetchData('brands', { match: { shop_id: process.env.SHOP_ID } });
+  
   const shop = await fetchData('shops', { match: { id: process.env.SHOP_ID } });
 
   return {
     props: {
-      brand: brand[0],
+
       shop: shop[0],
     },
   };

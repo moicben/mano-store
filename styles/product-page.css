@@ -300,10 +300,10 @@ section.product-hero {
   position: absolute;
   margin: 0;
   top: -2rem;
-  left: 2.7rem;
+  left: 2.15rem;
   color: #999;
   font-weight: 500;
-  text-transform: uppercase;
+  
 }
 
 .product-info button {
@@ -312,9 +312,10 @@ section.product-hero {
   border-radius: 8px;
   transition: .5s;
   color: #111;
-  border: 1px solid #333;
   height: 55px;
   width: calc(50% - .5rem);
+  background-color: transparent;
+  border:#111 solid 1px;
 }
 
 .product-info button:hover {
@@ -322,8 +323,9 @@ section.product-hero {
 }
 
 .product-info .buy-now {
-  color: white;
   transition:  0.5s ease;
+  background-color: #58d5bf;
+  border-color: #58d5bf;
 }
 
 @keyframes gradientShift {
@@ -361,7 +363,7 @@ section.product-hero {
   color: #666;
   font-weight: 400;
   line-height: 1.3rem;
-  text-transform: uppercase;
+  
 }
 
 .product-badges i {
@@ -499,63 +501,33 @@ details .product-content table{
   width: 100%;
 }
 
-.product-details .wrapper > div > div{
-  display: flex;
-  justify-content: space-between;
+.product-details svg,
+.product-details img,
+.product-details button,
+.product-details a {
+  display: none;
 }
-
-.product-details .wrapper > div > div > div{
-  width: calc(50% - 2rem);
-}
-
-.product-details .wrapper:last-child{
-  margin-bottom: 0rem;
-  padding-bottom: 4rem;
-}
-
 
 .product-details h2{
-  font-size: 2rem;
-  text-align: center;
+  font-weight: 700;
 }
 
-
-.product-details img{
-  height: 100%;
-  object-fit: cover;
+.product-details h3{
+    font-weight: 500;
+    margin: 1rem 0 .5rem 0;
 }
 
-
-.product-details .wrapper p:last-child {
-  color:#111;
-  font-size: 1.25rem ;
+.product-details ul{
+  display: block;
 }
 
-.product-details .wrapper p:first-child {
-  font-size: 1.6rem;
-  line-height: 2rem;
-  color: #666;
-}
-
-.product-details iframe {
-  height: 414px;
-  width: 100%;
-}
-
-.product-details .wrapper.advantages > div > div{
+.product-details li {
   display: flex;
-  justify-content: space-between;
-  margin: 0 -1rem;
-  text-align: center;
 }
 
-
-
-.product-details .wrapper.advantages > div > div > div{
-  padding: 1rem;
+.product-details .\\\"b38yzx{
+  width: 10rem;
 }
-
-
 
 
 
@@ -638,7 +610,7 @@ details .product-content table{
 .cta-banner {
   position: fixed;
   height: 90px;
-  top: 96px;
+  top: 76px;
   width: 100%;
   background-color: white;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -667,7 +639,7 @@ details .product-content table{
 
 .cta-banner > article > span {
   font-size: 14px;
-  text-transform: uppercase;
+  
   margin-bottom: .25rem;
   margin-top: -.5rem;
   color: #999;

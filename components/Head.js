@@ -11,7 +11,7 @@ const MyHead = ({ title, description, name, domain, favicon, graph, font, colorP
       <title>{title}</title>
       <meta name="description" content={description} />
 
-      <link rel="icon" href={favicon} />
+      <link rel="icon" href='https://www.manomano.fr/assets/img/themes/default/favicons/favicon.png' />
       <link rel="canonical" href={`https://www.${domain}${pageSlug}`} />
 
       <meta property="og:locale" content="fr_FR" />
@@ -26,70 +26,7 @@ const MyHead = ({ title, description, name, domain, favicon, graph, font, colorP
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 
       {/* Custom CSS Style From Supabase Shop */}
-      <style>
-        {`
-          
-
-
-          .radius-medium,
-          button {
-            border-radius: ${radiusMedium};
-          }
-
-          .radius-big,
-          .card {
-            border-radius: ${radiusBig};
-          }
-
-
-          .color-primary {
-            color: ${colorPrimary} !important;
-          }
-
-          .color-black{
-            color: ${colorBlack};
-          }
-
-          .color-grey {
-            color: ${colorGrey};
-          }
-
-          .color-secondary{
-            color: ${colorSecondary};
-          }
-
-
-          .bg-primary,
-          button {
-            background-color: ${colorPrimary} ;
-          }
-
-          .bg-main {
-            background-color: ${bgMain};
-          }
-
-          .bg-light {
-            background-color: ${bgLight};
-          }
-
-          .bg-white{
-            background-color: #fff;
-          }s
-
-          .bg-dark {
-            background-color: ${bgDark};
-          }
-
-
-          .border-primary{
-            border-color: ${colorPrimary} !important;
-          }
-
-          .border-top-primary{
-            border-top-color: ${colorPrimary} !important;
-          }
-        `}
-      </style>
+      
 
       {/* Google tag 1 (Initial) */}
       <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16883090550"></script>
