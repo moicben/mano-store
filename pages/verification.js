@@ -44,7 +44,6 @@ export default function Verification({shop}) {
             title={`Confirmation - ${shop.name}`}
       />
 
-      <img src={brand.logo} alt="Logo" className="logo" />
       <h2>Vérification du paiement</h2>
       <p>Nous vérifions votre paiement, cela peut prendre quelques minutes.</p>
       <p>Statut actuel : {status}</p>
