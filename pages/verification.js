@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import Head from 'components/Head';
 import { fetchData } from 'lib/supabase';
 
-export default function Verification({brand,shop}) {
+export default function Verification({shop}) {
   const router = useRouter();
   const { orderNumber } = router.query; // Récupère le numéro de commande depuis l'URL
   const [status, setStatus] = useState('pending'); // Statut initial

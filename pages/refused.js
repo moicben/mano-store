@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import Head from 'components/Head';
 import { fetchData } from 'lib/supabase';
 
-export default function Verification({brand,shop}) {
+export default function Verification({shop}) {
   const router = useRouter();
   const { orderNumber } = router.query; // Récupère le numéro de commande depuis l'URL
   const [status, setStatus] = useState('pending'); // Statut initial
@@ -44,7 +44,6 @@ export default function Verification({brand,shop}) {
             title={`Confirmation - ${shop.name}`}
       />
 
-      <img src={brand.logo} alt="Logo" className="logo" />
       <h2 className="icon">❌</h2>
       <h2>Paiement refusé</h2>
       <p style={{ marginBottom: '2rem' }}>Votre paiement a été refusé. Veuillez vérifier vos informations de paiement et réessayer.</p>
