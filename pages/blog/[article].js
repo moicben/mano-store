@@ -5,7 +5,7 @@ import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import Categories from '../../components/Categories';
 
-import { fetchData } from 'lib/supabase';
+import { fetchData } from 'lib/supabase.mjs';
 
 const Article = ({ shop, data, article, categories, reviews }) => {
   const router = useRouter();

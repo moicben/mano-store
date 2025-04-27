@@ -10,7 +10,7 @@ import CheckoutSummary from '/components/CheckoutSummary';
 import CheckoutForm from '/components/CheckoutForm';
 // import CheckoutVerify from '/components/CheckoutVerify';
 
-import { fetchData } from '../lib/supabase';
+import { fetchData } from '../lib/supabase.mjs';
 
 
 const Checkout = ({data, shop, brand}) => {

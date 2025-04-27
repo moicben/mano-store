@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { fetchData } from 'lib/supabase';
+import { fetchData } from 'lib/supabase.mjs';
 import { createClient } from '@supabase/supabase-js';
 
 const supabaseUrl = 'https://bpybtzxqypswjiizkzja.supabase.co'

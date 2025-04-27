@@ -1,4 +1,4 @@
-import { supabase } from '../lib/supabase.js';
+import { supabase } from '../lib/supabase.mjs';
 import fs from 'fs';
 
 // Charger les données depuis products.json

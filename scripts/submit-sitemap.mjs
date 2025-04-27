@@ -1,7 +1,7 @@
 import path from 'path';
 import dotenv from 'dotenv';
 import { google } from 'googleapis';
-import { fetchData } from '../lib/supabase.js'; // Import de fetchData depuis supabase.js
+import { fetchData } from '../lib/supabase.mjs'; // Import de fetchData depuis supabase.mjs
 
 dotenv.config();
 

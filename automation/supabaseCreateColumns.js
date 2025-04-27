@@ -1,4 +1,4 @@
-import { supabase } from '../lib/supabase.js';
+import { supabase } from '../lib/supabase.mjs';
 
 /**
  * Ajoute une colonne à la table "contents" si elle n'existe pas déjà.

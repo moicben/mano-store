@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useRouter } from 'next/router';
 
 import Head from '../components/Head';
-import { fetchData } from '../lib/supabase';
+import { fetchData } from '../lib/supabase.mjs';
 
 const Confirmation = ({shop}) =>{
   const router = useRouter();

@@ -7,7 +7,7 @@ import Products from '../components/Products';
 import Testimonials from '../components/Testimonials';
 import Head from '../components/Head';
 
-import { fetchData }  from '../lib/supabase'; // Assurez-vous que le chemin est correct
+import { fetchData }  from '../lib/supabase.mjs'; // Assurez-vous que le chemin est correct
 import { da } from 'date-fns/locale';
 
 const Home = ({ data, shop, products, reviews }) => {

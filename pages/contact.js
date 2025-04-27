@@ -8,7 +8,7 @@ import About from '../components/About';
 import Reviews from '../components/Reviews';
 import Testimonials from '../components/Testimonials';
 
-import { fetchData } from '../lib/supabase';
+import { fetchData } from '../lib/supabase.mjs';
 
 const Contact = ({ shop,data, categories, reviews }) => {
   const [cartCount, setCartCount] = useState(0);

@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import { fetchData } from '../lib/supabase.js';
+import { fetchData } from '../lib/supabase.mjs';
 
 // Récupération de l'URL du site depuis la table shops
 const shops = await fetchData('shops', { match: { id: process.env.SHOP_ID } });

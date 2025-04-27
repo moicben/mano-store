@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 
 import Head from 'components/Head';
-import { fetchData } from 'lib/supabase';
+import { fetchData } from 'lib/supabase.mjs';
 
 export default function Verification({shop}) {
   const router = useRouter();

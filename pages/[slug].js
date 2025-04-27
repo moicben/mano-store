@@ -8,7 +8,7 @@ import Reviews from '../components/Reviews';
 import Testimonials from 'components/Testimonials';
 import ProductInfos from '../components/ProductInfos';
 
-import { fetchData } from '../lib/supabase';
+import { fetchData } from '../lib/supabase.mjs';
 
 
 export default function ProductDetail({ product, shop, data, products, reviews }) {
