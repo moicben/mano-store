@@ -62,7 +62,7 @@ export default function ProductInfos({ product, handleAddToCart, buttonText, sho
             Retour offert<br></br> 60 jours
           </span>
         </li>
-        <li>
+        <li> 
           <i className="fas fa-award"></i>
           <span>
             Garantie <br></br> 2 ans
