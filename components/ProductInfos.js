@@ -54,9 +54,9 @@ export default function ProductInfos({ product, handleAddToCart, buttonText, sho
         </button>
         <button className='bg-white' onClick={handleAddToCart}>{buttonText}</button>
       </article>
-
+ 
       <ul className="product-badges">
-        <li>
+        <li> 
           <i className="fas fa-shield-alt"></i>
           <span>
             Retour offert<br></br> 60 jours
