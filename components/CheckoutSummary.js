@@ -45,7 +45,7 @@ const CheckoutSummary = ({ cart, totalPrice, discount, discountedPrice, name, pa
           ))}
         </ul>
         <div className="cart-item discount">
-          <h4>{data.checkoutPromoLabel} <input value={data.checkoutPromoCode}/></h4>
+          <h4>{data.checkoutPromoLabel} <input value=MAI15/></h4>
           <p className='quantity'>{data.checkoutPromoRate}%</p>
           <p>{`-${(cart.reduce((total, item) => total + item.price * item.quantity, 0) * `.15`).toLocaleString(shop.language, { minimumFractionDigits: 2 })} ${shop.currency}`}</p>
         </div>
