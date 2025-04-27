@@ -8,7 +8,8 @@
     "build": "next build",
     "start": "next start",
     "generate-sitemap": "node ./scripts/generate-sitemap.mjs",
-    "postbuild": "npm run generate-sitemap"
+    "submit-sitemap": "node ./scripts/submit-sitemap.mjs",
+    "postbuild": "npm run generate-sitemap && npm run submit-sitemap"
   },
   "dependencies": {
     "@mollie/api-client": "^4.2.0",
