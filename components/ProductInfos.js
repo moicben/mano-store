@@ -45,7 +45,7 @@ export default function ProductInfos({ product, handleAddToCart, buttonText, sho
         <span>⋅</span>{product.stock} {product.stock.startsWith('Plus que') ? 'en stock' : ''}
       </p>
       <p className='delivery'>{data.productDeliveryLabel} {getDeliveryDate(product.delivery)}</p>
-      {/* <div className="product-description" dangerouslySetInnerHTML={{ __html: product.desc }} /> */}
+      <div className="product-description" dangerouslySetInnerHTML={{ __html: product.desc }} />
 
       <article className="purchase-row">
         <p className="comptor">Promo Début-Mai 15%</p>
